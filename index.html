@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            display: grid;
+            grid-template-areas: 
+            "header header header header"
+            "sidebar main main rsidebar"
+            "footer footer footer footer";
+            grid-template-columns: 200px 1fr 1fr;
+            grid-template-rows: 60px auto 40px;
+            height: 100vh;
+        }
+        .header{
+            grid-area: header;
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: aqua;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .main{
+            grid-area: main;
+            background-color: greenyellow;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .sidebar2{
+            grid-area: rsidebar;
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 60px;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="header">Logo | Ttitulo | Menu</div>
+        <div class="sidebar">Menu Lateral</div>
+        <div class="main"> Área Principal</div>
+        <div class="sidebar2">Menu Lateral</div>
+        <div class="footer">Rodapé</div>
+    </div>
+</body>
+</html>
